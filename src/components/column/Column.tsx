@@ -1,16 +1,16 @@
 import React from "react";
 import { Droppable } from "react-beautiful-dnd";
 import { Card } from "../card";
-import { CardItem } from "../card/Card";
+import { ICard } from "../card/Card";
 
 import styles from "./Column.module.scss";
 
-export type ColumnItem = {
+export type IColumn = {
 	title: string;
 	id: string;
-	cards: CardItem[];
+	cards: ICard[];
 };
-export type ColumnProps = ColumnItem & {};
+export type ColumnProps = IColumn & {};
 
 export const Column: React.FC<ColumnProps> = (props) => {
 	const { title, id, cards } = props;

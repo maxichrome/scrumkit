@@ -1,7 +1,7 @@
 import React from "react";
 import { DragDropContext, DropResult } from "react-beautiful-dnd";
 import { Column } from "../column";
-import { ColumnItem } from "../column/Column";
+import { IColumn } from "../column/Column";
 import { initialData } from "../../data/initial-columns";
 
 import styles from "./ColumnSet.module.scss";
@@ -11,7 +11,7 @@ export type ColumnSetProps = {};
 export const ColumnSet: React.FC<ColumnSetProps> = (props) => {
 	const {} = props;
 
-	const [columns, setColumns] = React.useState<ColumnItem[]>(initialData);
+	const [columns, setColumns] = React.useState<IColumn[]>(initialData);
 
 	const onDragEnd = React.useCallback((dropEvent: DropResult) => {
 		if (!dropEvent.destination) return;

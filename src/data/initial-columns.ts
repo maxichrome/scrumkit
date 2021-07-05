@@ -1,6 +1,6 @@
-import { ColumnItem } from "../components/column/Column";
+import { IColumn } from "../components/column/Column";
 
-export const initialData: ColumnItem[] = [
+export const initialData: IColumn[] = [
 	{
 		id: "first",
 		title: "What needs to change",

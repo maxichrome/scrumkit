@@ -3,11 +3,11 @@ import { Draggable } from "react-beautiful-dnd";
 
 import styles from "./Card.module.scss";
 
-export type CardItem = {
+export type ICard = {
 	id: string;
 	value: string;
 };
-export type CardProps = CardItem & {
+export type CardProps = ICard & {
 	index: number;
 	onChange: (value: string) => void;
 };
