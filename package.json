@@ -1,0 +1,28 @@
+{
+	"name": "scrumkit",
+	"author": "hadenpf",
+	"version": "1.0.0",
+	"main": "index.js",
+	"private": true,
+	"scripts": {
+		"dev": "next",
+		"build": "next build",
+		"start": "next start",
+		"type-check": "tsc"
+	},
+	"dependencies": {
+		"next": "latest",
+		"react": "^17.0.2",
+		"react-dom": "^17.0.2"
+	},
+	"devDependencies": {
+		"@types/node": "^12.12.21",
+		"@types/react": "^16.9.16",
+		"@types/react-dom": "^16.9.4",
+		"eslint": "^7.29.0",
+		"eslint-config-next": "^11.0.1",
+		"prettier": "^2.3.2",
+		"sass": "^1.35.1",
+		"typescript": "4.0"
+	}
+}

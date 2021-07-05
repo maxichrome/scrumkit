@@ -1,0 +1,37 @@
+.Column {
+	display: flex;
+	flex-direction: column;
+	flex: 1 0;
+
+	background: mintcream;
+	border: 1px solid lightgray;
+	margin-right: 12px;
+
+	min-width: 256px;
+	max-width: 396px;
+
+	// &:not(:last-child) {
+	// 	border-right: none;
+	// }
+}
+
+.Header {
+	font-weight: 700;
+	padding: 8px 12px;
+
+	border-bottom: 1px solid lightgray;
+}
+
+.Stack {
+	display: flex;
+	flex-direction: column;
+	flex: 1 0;
+
+	padding: 12px;
+
+	min-height: 256px;
+
+	> *:not(:last-child) {
+		margin-bottom: 8px;
+	}
+}
